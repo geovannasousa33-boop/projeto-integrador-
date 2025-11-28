@@ -1,1 +1,332 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f3fbff;
+    color: #00334d;
+}
+
+/* =========================== */
+/* MENU */
+/* =========================== */
+.header {
+    background: #00334d;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #25d366;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #25d366;
+}
+
+/* MENU MOBILE */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: white;
+    margin: 5px 0;
+}
+
+
+/* =========================== */
+/* HERO */
+/* =========================== */
+.hero {
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(135deg, #0077b6, #25d366);
+    color: white;
+    padding-bottom: 60px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    width: 430px;
+    border-radius: 15px;
+}
+
+
+/* =========================== */
+/* BOTÃO PADRÃO */
+/* =========================== */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #00334d;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #25d366;
+    color: white;
+}
+
+
+/* =========================== */
+/* SEÇÃO SOBRE */
+/* =========================== */
+.sobre {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.sobre-container {
+    display: flex;
+    gap: 40px;
+}
+
+.sobre-container img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.sobre-texto {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================== */
+/* HISTÓRIA */
+/* =========================== */
+.historia {
+    background: #e5fcf1;
+    padding: 70px 20px;
+}
+
+.historia h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.historia-box {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.historia-box p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================== */
+/* SERVIÇOS */
+/* =========================== */
+.servicos {
+    padding: 80px 20px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+
+/* =========================== */
+/* ESTRUTURA */
+/* =========================== */
+.estrutura {
+    padding: 80px 20px;
+    background: #f0ffff;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================== */
+/* LOCALIZAÇÃO */
+/* =========================== */
+.localizacao {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.localizacao iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* =========================== */
+/* CONTATO */
+/* =========================== */
+.contato {
+    padding: 80px 20px;
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    border: 2px solid #0077b6;
+    border-radius: 5px;
+}
+
+.feedback {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* RESPONSIVIDADE */
+@media(max-width: 900px) {
+    .servicos-grid,
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-container img,
+    .sobre-texto {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #00334d;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media(max-width: 600px) {
+    .servicos-grid,
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
