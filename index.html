@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Nome da Clínica]</title>
+    <title>BlueGreen Tech</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Menu de Navegação -->
-    <header>
-        <nav>
-            <ul>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">BlueGreen <span>Tech</span></div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#consultas">Consultas</a></li>
-                <li><a href="#exames">Exames</a></li>
-                <li><a href="#convenios">Convênios</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#blog">Blog</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
 
-    <!-- Seções do site -->
-    <section id="inicio">
-        <div class="welcome">
-            <h1>Bem-vindo à [Nome da Clínica]</h1>
-            <p>Recupere sua saúde com atendimento humanizado e especializado.</p>
-            <button onclick="agendar()">Agende sua avaliação</button>
-        </div>
-    </section>
-
-    <section id="sobre">
-        <h2>Sobre Nossa Clínica</h2>
-        <p>Na [Nome da Clínica], oferecemos atendimento humanizado e especializado em fisioterapia e reabilitação física, focando na recuperação funcional, alívio da dor e qualidade de vida.</p>
-    </section>
-
-    <section id="servicos">
-        <h2>Serviços em Destaque</h2>
-        <ul>
-            <li>Fisioterapia Ortopédica e Traumatológica</li>
-            <li>Fisioterapia Neurológica</li>
-            <li>Fisioterapia Respiratória</li>
-            <li>Pi
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Inovação em Azul e Verde</h1>
+            <p>Design moderno, tecnologia avançada e soluções sustentáveis.</p>
